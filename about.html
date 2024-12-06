@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Save a Student</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            font-family: 'Lato', sans-serif;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Navbar Styles */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #1a1a1a;
+            color: white;
+            padding: 10px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar ul li {
+            margin: 0 10px;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+
+        .navbar ul li a:hover {
+            color: #ff4d6d;
+        }
+
+        /* About Section */
+        .about-section {
+            padding: 80px 20px;
+            text-align: center;
+            background-color: #f9f9f9;
+        }
+
+        .about-section .container {
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .about-section .section-title {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #ff4d6d;
+            margin-bottom: 20px;
+        }
+
+        .about-section .section-description {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #555;
+        }
+
+        /* Responsive Adjustments */
+        @media (min-width: 768px) {
+            .about-section .section-title {
+                font-size: 3rem;
+            }
+
+            .about-section .section-description {
+                font-size: 1.3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="logo">Student Saver</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="discount.html">Discounts</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+        </ul>
+    </div>
+
+    <!-- About Us Section -->
+    <section class="about-section" id="story">
+        <div class="container">
+            <h2 class="section-title">ABOUT US</h2>
+            <p class="section-description">
+                Save a Student is a mini company aiming to promote our local economy by offering students deals at local businesses. 
+                We are a group of four TY students attending Scoil Muire agus Padraig, Swinford, Co. Mayo. 
+                We are passionate about shopping local, and partnering with local businesses to offer deals to students is our way to incentivize students to support these businesses.
+            </p>
+        </div>
+    </section>
+</body>
+</html>
+

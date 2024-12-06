@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deals - Save a Student</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            font-family: 'Lato', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Navbar Styles */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #1a1a1a;
+            color: white;
+            padding: 10px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar ul li {
+            margin: 0 10px;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+
+        .navbar ul li a:hover {
+            color: #ff4d6d;
+        }
+
+        /* Header */
+        h1 {
+            font-size: 3rem;
+            color: #333;
+            text-align: center;
+            margin: 80px 0 40px;
+        }
+
+        /* Discount Section */
+        .section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .section.light {
+            background-color: #f9f9f9;
+        }
+
+        .section.dark {
+            background-color: #1a1a1a;
+            color: white;
+        }
+
+        .discount-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 20px auto;
+            max-width: 1200px;
+        }
+
+        .discount-item {
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .discount-item .title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #ff4d6d;
+            margin-bottom: 10px;
+        }
+
+        .discount-item p {
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        /* Divider (SVG Shape for Modern Breaks) */
+        .divider {
+            height: 80px;
+            background: url('https://www.svgrepo.com/show/276644/wave.svg') no-repeat center bottom;
+            background-size: cover;
+            margin: 0;
+        }
+
+        /* Responsive Adjustments */
+        @media (min-width: 768px) {
+            h1 {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="logo">Student Saver</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="discount.html">Discounts</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+        </ul>
+    </div>
+
+    <!-- Header -->
+    <h1>Our Discounts...</h1>
+
+    <!-- Discount Section 1 -->
+    <div class="section light">
+        <div class="discount-grid">
+            <div class="discount-item">
+                <div class="title">Apache</div>
+                <p>30% off everything</p>
+            </div>
+            <div class="discount-item">
+                <div class="title">O'Donnells</div>
+                <p>10% off cosmetics and OTC products</p>
+            </div>
+            <div class="discount-item">
+                <div class="title">Makeup with Megan</div>
+                <p>10% off on Tuesdays and Wednesdays</p>
+            </div>
+            <div class="discount-item">
+                <div class="title">The Health Hub</div>
+                <p>3 months for 100 (16s over membership)</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- Discount Section 2 -->
+    <div class="section light">
+        <div class="discount-grid">
+            <div class="discount-item">
+                <div class="title">The Coffee Doc</div>
+                <p>Lemonades and Refreshers 2.50</p>
+            </div>
+            <div class="discount-item">
+                <div class="title">Mr. Mobile</div>
+                <p>20% off phone accessories</p>
+            </div>
+            <div class="discount-item">
+                <div class="title">Moores Supermarket</div>
+                <p>Buy 5 drinks, get the 6th free</p>
+            </div>
+            <div class="discount-item">
+                <div class="title">And many more...</div>
+                <p>Coming soon...</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

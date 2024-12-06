@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Themed Sections with Navbar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* General Body and Font Styles */
+        body {
+            margin: 0;
+            font-family: 'Lato', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Navbar Styles */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #1a1a1a;
+            color: white;
+            padding: 10px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar ul li {
+            margin: 0 10px;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+
+        .navbar ul li a:hover {
+            color: #ff4d6d;
+        }
+
+        /* General Section Styles */
+        .section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .section.light {
+            background-color: #f9f9f9;
+        }
+
+        .section.dark {
+            background-color: #1a1a1a;
+            color: white;
+        }
+
+        /* Typography */
+        .section h2 {
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .section p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 1rem;
+            color: white;
+            background-color: #ff4d6d;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #ff2a53;
+        }
+
+        /* Image Styling */
+        .section img {
+            max-width: 90%;
+            height: auto;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Divider (SVG Shape for Modern Breaks) */
+        .divider {
+            height: 80px;
+            background: url('https://www.svgrepo.com/show/276644/wave.svg') no-repeat center bottom;
+            background-size: cover;
+            margin: 0;
+        }
+
+        /* Responsive Adjustments */
+        @media (min-width: 768px) {
+            .section h2 {
+                font-size: 3.5rem;
+            }
+
+            .section p {
+                font-size: 1.3rem;
+            }
+
+            .btn {
+                padding: 15px 40px;
+                font-size: 1.1rem;
+            }
+
+            .navbar ul li a {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+       <div class="navbar">
+        <div class="logo">Student Saver</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="discount.html">Discounts</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+        </ul>
+    </div>
+
+    <!-- Section 1 -->
+    <div id="welcome" class="section light">
+        <h2>Welcome to Student Saver</h2>
+        <p>Your gateway to exclusive discounts and offers. Save more, stress less.</p>
+        <a href="signup.html" class="btn">Sign Up Now</a>
+    </div>
+    <div class="divider"></div>
+
+    <!-- Section 2 -->
+    <div class="section dark">
+        <h2>Our Story</h2>
+        <p>Discover how we help students save on the essentials while living their best lives.</p>
+        <img src="studentsaver.jpeg" alt="Our Story Image">
+    </div>
+    <div class="divider"></div>
+
+    <!-- Section 3 -->
+    <div id="follow" class="section light">
+        <h2>Follow Us</h2>
+        <p>Stay updated with the latest deals and trends. Connect with us on social media!</p>
+        <a href="https://www.instagram.com/studentsaverscmap" class="btn">Follow on Instagram</a>
+    </div>
+</body>
+</html>
+
+
